@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="#8BFFEB3B">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/dortislem"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" android:layout_marginBottom="21dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/fonkislem"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="68dp" android:layout_marginEnd="68dp">
+        <Button
+                android:text="+"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button"
+                android:onClick="top" android:background="#851223"/>
+        <Button
+                android:text="-"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button2"
+                android:onClick="cikar" android:background="#9F0B21"/>
+        <Button
+                android:text="/"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button3"
+                android:onClick="bol" android:background="#B10B24"/>
+        <Button
+                android:text="*"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button4"
+                android:onClick="carp" android:background="#D10E2B"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/textView4"
+            android:textSize="24sp" android:textAlignment="center"
+            android:hint="Result :"
+            app:layout_constraintTop_toBottomOf="@+id/acilar" android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="52dp" android:layout_marginEnd="52dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:hint="Please the enter first number"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="27dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editText2" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="22dp" android:layout_marginEnd="22dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Please the enter seconder number"
+            app:layout_constraintTop_toBottomOf="@+id/editText" android:layout_marginBottom="38dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/dortislem"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="22dp" android:layout_marginEnd="22dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/fonkislem"
+            app:layout_constraintTop_toBottomOf="@+id/dortislem" android:layout_marginBottom="22dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/usluislem"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="68dp" android:layout_marginEnd="68dp">
+        <Button
+                android:text="!"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button6"
+                android:onClick="faktor"
+                android:background="#0A144E"/>
+        <Button
+                android:text="%"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button7"
+                android:onClick="mod"
+                android:background="#141F61"/>
+        <Button
+                android:text="x^2"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button10"
+                android:onClick="karesi"
+                android:background="#222F80"/>
+        <Button
+                android:text="x^y"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button11"
+                android:onClick="usalma"
+                android:background="#4756B3"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/usluislem"
+            app:layout_constraintTop_toBottomOf="@+id/fonkislem" android:layout_marginBottom="18dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/acilar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="65dp" android:layout_marginEnd="65dp">
+        <Button
+                android:text="1/x"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button14"
+                android:onClick="kesir"
+                android:background="#064A09"/>
+        <Button
+                android:text="e^x"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button15"
+                android:onClick="eusu"
+                android:textColorHighlight="@color/colorPrimaryDark" android:background="#116314"/>
+        <Button
+                android:text="√"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button5"
+                android:onClick="karekok"
+                android:textColorHighlight="@color/colorPrimaryDark" android:background="#116314"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/acilar" app:layout_constraintTop_toBottomOf="@+id/usluislem"
+            android:layout_marginBottom="46dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView4" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="65dp" android:layout_marginEnd="65dp"
+    >
+        <Button
+                android:text="cos"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button8"
+                android:onClick="cos"
+                android:textColorHighlight="@color/colorPrimaryDark" android:background="#116314"
+        />
+        <Button
+                android:text="sin"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button9"
+                android:onClick="sin"
+                android:textColorHighlight="@color/colorPrimaryDark" android:background="#116314"
+        />
+        <Button
+                android:text="tan"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/button12"
+                android:onClick="tan"
+                android:textColorHighlight="@color/colorPrimaryDark" android:background="#116314"
+        />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
